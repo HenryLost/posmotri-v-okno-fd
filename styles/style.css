@@ -156,7 +156,7 @@ input[type="checkbox"]:checked + span::after {
 }
 
 input {
-  border-top: 1px solid #fff;
+  border-top: 1px solid currentColor;
   border-right: none;
   border-bottom: 1px solid #fff;
   border-left: none;
@@ -177,7 +177,7 @@ label:has(input:focus-visible) {
 .button {
   color: #fff;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -236,8 +236,7 @@ label:has(input:focus-visible) {
   display: flex;
   flex-direction: column;
   height: 298px;
-  overflow-y: scroll;
-  overflow-x: auto;
+  overflow: auto;
   gap: 30px;
 }
 
@@ -264,26 +263,25 @@ label:has(input:focus-visible) {
 
 .content__video-card {
   width: 390px;
-  min-height: 103px;
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
 
-.content__video-card:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
-.content__video-card:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.content__video-card:focus {
+.content__card-link:focus {
   outline: none;
 }
 
-.content__video-card:focus-visible {
+.content__card-link:focus-visible {
   border: 1px solid #fff;
   border-radius: 0;
 }
